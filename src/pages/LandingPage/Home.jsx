@@ -21,7 +21,7 @@ export default function Home(){
       <Navbar />
       <Header/>
       <Carrusel/>
-      <Nosotros/>
+      <Nosotros />
       <Contacto/>
       <Footer/>
     </div>

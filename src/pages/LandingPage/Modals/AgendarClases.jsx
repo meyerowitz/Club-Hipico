@@ -1,32 +1,23 @@
 import React, { useState } from 'react';
 
-const AgendarClase = () => {
-  // Estado para controlar si el modal está abierto o cerrado
-  const [isOpen, setIsOpen] = useState(false);
+const AgendarClase = ({isOpen, setIsOpen}) => {
 
-  const toggleModal = () => setIsOpen(!isOpen);
 
   return (
     <>
-      <button 
-        onClick={toggleModal}
-        className="bg-[#2c0244] text-white px-8 py-3 uppercase tracking-widest text-sm font-serif shadow-lg hover:bg-[#3d045e] transition-all"
-      >
-        Agendar una Clase
-      </button>
 
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6">
           {/* Fondo oscurecido con cierre al hacer clic fuera */}
           <div 
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-            onClick={toggleModal}
+            onClick={()=>{setIsOpen(false)}}
           ></div>
 
           <div className="relative z-10 w-full max-w-4xl bg-gradient-to-br from-[#2c0244] via-[#1a0129] to-[#000000] p-1 shadow-2xl rounded-sm animate-in fade-in zoom-in duration-300">
             
             <button 
-              onClick={toggleModal}
+              onClick={()=>{setIsOpen(false)}}
               className="absolute top-4 right-4 text-white/70 hover:text-white text-2xl z-20"
             >
               &times;

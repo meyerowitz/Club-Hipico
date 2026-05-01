@@ -3,11 +3,10 @@ import Pasion from "@/assets/clasico-polla-de-potrancas.jpg"
 
 const Nosotros = () => {
   return (
-    <section className="py-20 bg-white mx-[5%]">
+    <section id="#Nosotros" className="py-20 bg-white mx-[5%]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
-          {/* Columna de Imagen / Composición Visual */}
           <div className="relative">
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
               <img 
@@ -16,10 +15,9 @@ const Nosotros = () => {
                 className="w-full h-[500px] object-cover"
               />
             </div>
-            {/* Decoración geométrica en ámbar */}
             <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-amber-500 rounded-3xl -z-0 hidden md:block"></div>
             {/* Badge de experiencia o frase clave */}
-            <div className="absolute -top-6 -left-6 bg-purple-900 text-white p-6 rounded-2xl shadow-xl z-20 max-w-[200px]">
+            <div className="absolute -top-6 -left-6 bg-purple-900 text-white p-6 rounded-2xl shadow-xl z-20 max-w-[200px] transform hover:scale-[1.05] transition-transform duration-300 cursor-pointer ">
               <p className="text-3xl font-bold text-amber-400">100%</p>
               <p className="text-sm font-medium">Pasión por la excelencia ecuestre y la educacion.</p>
             </div>
