@@ -9,8 +9,9 @@ const Contacto = () => {
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&q=80')" }}
       ></div>
 
-      {/* Contenedor con DEGRADADO PÚRPURA PROFUNDO */}
-      <div className="relative z-10 w-full max-w-4xl bg-gradient-to-br from-[#2c0244] via-[#1a0129] to-[#000000] p-8 md:p-16 shadow-2xl rounded-sm">
+      {/* Contenedor con DEGRADADO PÚRPURA ACLARADO */}
+      {/* Hemos cambiado el negro (#000000) por un púrpura profundo (#1a0129) y el inicio por uno más vibrante (#4a0e7d) */}
+      <div className="relative z-10 w-full max-w-4xl bg-gradient-to-br from-[#4a0e7d] via-[#2c0244] to-[#1a0129] p-8 md:p-16 shadow-2xl rounded-sm">
         
         <div className="text-center mb-10">
           <h2 className="text-white text-4xl md:text-5xl font-serif mb-4 drop-shadow-md">
@@ -30,7 +31,7 @@ const Contacto = () => {
               <input 
                 type="text" 
                 placeholder="Nombre y Apellido"
-                className="w-full bg-white border border-gray-200 focus:border-[#2c0244] text-gray-800 p-4 outline-none transition-all placeholder:text-gray-400"
+                className="w-full bg-white border border-gray-200 focus:border-[#4a0e7d] text-gray-800 p-4 outline-none transition-all placeholder:text-gray-400"
               />
             </div>
 
@@ -39,7 +40,7 @@ const Contacto = () => {
               <input 
                 type="email" 
                 placeholder="Email"
-                className="w-full bg-white border border-gray-200 focus:border-[#2c0244] text-gray-800 p-4 outline-none transition-all placeholder:text-gray-400"
+                className="w-full bg-white border border-gray-200 focus:border-[#4a0e7d] text-gray-800 p-4 outline-none transition-all placeholder:text-gray-400"
               />
             </div>
 
@@ -48,7 +49,7 @@ const Contacto = () => {
               <input 
                 type="tel" 
                 placeholder="Celular"
-                className="w-full bg-white border border-gray-200 focus:border-[#2c0244] text-gray-800 p-4 outline-none transition-all placeholder:text-gray-400"
+                className="w-full bg-white border border-gray-200 focus:border-[#4a0e7d] text-gray-800 p-4 outline-none transition-all placeholder:text-gray-400"
               />
             </div>
 
@@ -57,18 +58,18 @@ const Contacto = () => {
               <textarea 
                 placeholder="Comentario"
                 rows="4"
-                className="w-full bg-white border border-gray-200 focus:border-[#2c0244] text-gray-800 p-4 outline-none transition-all placeholder:text-gray-400 resize-none"
+                className="w-full bg-white border border-gray-200 focus:border-[#4a0e7d] text-gray-800 p-4 outline-none transition-all placeholder:text-gray-400 resize-none"
               ></textarea>
               <span className="absolute bottom-2 right-4 text-[10px] text-gray-400 uppercase">
                 0 of 350
               </span>
             </div>
 
-            {/* Botón de Envío con tu color exacto */}
+            {/* Botón de Envío */}
             <div className="pt-4">
               <button 
                 type="submit"
-                className="w-full bg-[#2c0244] hover:bg-[#3d045e] text-white font-serif py-4 transition-all duration-300 uppercase tracking-widest text-sm shadow-lg active:scale-[0.98]"
+                className="w-full bg-[#2c0244] hover:bg-[#4a0e7d] text-white font-serif py-4 transition-all duration-300 uppercase tracking-widest text-sm shadow-lg active:scale-[0.98]"
               >
                 Enviar Mensaje
               </button>
