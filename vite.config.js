@@ -8,7 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 
 export default defineConfig({
-  base: '/Club-Hipico/',,
+  base: '/Club-Hipico/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
