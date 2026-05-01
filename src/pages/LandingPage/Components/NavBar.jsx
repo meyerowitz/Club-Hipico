@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import Logo from "@/assets/Logo.png";
 import { Search, Menu, X } from 'lucide-react';
+import AgendarClase from '../Modals/AgendarClases';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative bg-white shadow-sm">
+    <nav className="relative bg-white">
       <div className="flex items-center justify-between px-6 lg:px-12 py-4">
         
-        {/* LOGO */}
         <a href="/Inicio" className="relative group flex items-center space-x-4 p-2 transition-all duration-300 z-50">
           <img 
             src={Logo} 
@@ -24,7 +24,6 @@ const Navbar = () => {
           </div>
         </a>
 
-        {/* MENU DESKTOP (Sin arreglos) */}
         <ul className="hidden lg:flex items-center space-x-8 text-sm font-bold text-purple-900">
           <li className="group relative p-1 px-2 cursor-pointer transition-all duration-300">
             <a href="#instalaciones" className="relative z-10 transition-all duration-300 group-hover:text-purple-600 group-hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">Instalaciones</a>
@@ -48,13 +47,14 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* LADO DERECHO */}
         <div className="flex items-center space-x-4">
           <div className="relative group hidden md:block">
             <input 
               type="text" 
               placeholder="Buscar..." 
-              className="pl-10 pr-4 py-2 bg-slate-100 border-2 border-purple-900 rounded-full text-sm text-purple-900 w-40 focus:w-60 focus:bg-white transition-all duration-300 focus:outline-none focus:shadow-[0_0_15px_rgba(147,51,234,0.4)]"
+              className="pl-10 pr-4 py-2 bg-slate-100 border-2 border-[#2c0244]/30 text-sm text-[#2c0244] w-40 rounded-full transition-all duration-300 outline-none
+                hover:w-60 hover:border-[#2c0244] hover:bg-slate-50 hover:shadow-[0_0_15px_rgba(44,2,68,0.2)] 
+                 focus:w-60 focus:bg-white focus:border-amber-400 focus:shadow-[0_0_20px_rgba(44,2,68,0.3)]"
             />
             <Search className="absolute left-3 top-2.5 text-purple-900 group-focus-within:text-purple-600 transition-all" size={18} strokeWidth={2.5} />
           </div>
@@ -63,7 +63,6 @@ const Navbar = () => {
             Agendar Clase
           </button>
 
-          {/* BOTÓN HAMBURGUESA */}
           <button 
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 text-purple-950 hover:bg-purple-50 rounded-xl transition-colors z-50"
@@ -73,7 +72,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* MENÚ MÓVIL DESPLEGABLE (Sin arreglos) */}
       <div className={`
         lg:hidden absolute top-full left-0 w-full bg-white border-t border-slate-100 shadow-xl transition-all duration-300 ease-in-out z-40
         ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10 pointer-events-none"}

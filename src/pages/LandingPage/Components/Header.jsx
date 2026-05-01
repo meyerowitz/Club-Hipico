@@ -27,7 +27,7 @@ const Header = () => {
           className="absolute inset-0 w-full h-full object-cover z-10 mix-blend-overlay opacity-70" 
           alt="Efecto Color" 
         />
-        <div className="absolute inset-0 z-20 bg-gradient-to-r from-black/70 via-black/20 to-transparent md:bg-gradient-to-t md:from-black/80 md:via-transparent animate-blacken"></div>
+        <div className="absolute inset-0 z-20 bg-gradient-to-r from-black/70 via-black/20 to-transparent md:bg-gradient-to-t md:from-black/80 md:via-transparent"></div>
         
         <div className="relative z-40 w-full md:w-[60%] px-8 md:px-12 ml-0 md:ml-[5%] lg:ml-[3%] flex flex-col transition-all duration-500">
             <img 
@@ -59,13 +59,13 @@ const Header = () => {
         {/* Jinete 2 (Atrás) - Empieza pequeño y crece */}
         <img 
             src={Jinete2} 
-            className="absolute right-[-15%] md:right-[-2%] bottom-0 translate-y-[2%] md:translate-y-[10%] h-[65%] md:h-[80%] lg:h-[85%] z-30 object-contain object-bottom animate-grow-back shadow-inner" 
+            className="absolute right-[-15%] md:right-[-2%] bottom-0 translate-y-[2%] md:translate-y-[10%] h-[65%] md:h-[80%] lg:h-[85%] z-30 object-contain object-bottom animate-grow-back shadow-inner transform hover:scale-[1.05] transition-transform duration-300 cursor-pointer" 
             alt="Jinete 2" 
         />
 
         <img 
           src={Jinete1} 
-          className="absolute right-[-15%] md:right-[-8%] bottom-0 translate-y-[1%] h-[75%] md:h-[90%] lg:h-[95%] z-30 object-contain object-bottom animate-grow-front" 
+          className="absolute right-[-15%] md:right-[-8%] bottom-0 translate-y-[1%] h-[75%] md:h-[90%] lg:h-[95%] z-30 object-contain object-bottom animate-grow-front transform hover:scale-[1.05] transition-transform duration-300 cursor-pointer" 
           alt="Jinete 1" 
         />
 
